@@ -24,7 +24,7 @@ export default Login = props => {
                 <InputRadius />
             </LabelAlign>
 
-            <ButtonRadius>
+            <ButtonRadius onPress={() => props.navigation.navigate('App')}>
                 <TextButton>Login</TextButton>
             </ButtonRadius>
 

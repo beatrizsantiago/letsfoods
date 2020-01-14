@@ -75,7 +75,7 @@ export const RegisterContainer = styled.View`
     display: flex;
     align-items: center;
     width: 90%;
-    margin: 22.5% 5% 5% 5%;
+    margin: 90px 5% 5% 5%;
     padding: 10px 0px;
     background-color: #fff;
     border-radius: 5px;
