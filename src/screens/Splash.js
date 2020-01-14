@@ -14,9 +14,9 @@ export default function Splash(props) {
 
     useEffect(() => {
         animate()
-        // setTimeout(() => {
+        setTimeout(() => {
             props.navigation.navigate('Login')
-        // }, 4000);
+        }, 4000);
     }, [])
 
     const animate = () => {

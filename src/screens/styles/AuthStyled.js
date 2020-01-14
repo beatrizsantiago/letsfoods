@@ -8,6 +8,16 @@ export const LogoContainer = styled.View`
     width: 100%;
 `
 
+export const LogoContainerGray = styled.View`
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding: 15px;
+    background-color: #f5f5f5;
+`
+
 export const TextSubtitle = styled.Text`
     font-size: 12px;
     color: #7d7d7d;
@@ -59,6 +69,24 @@ export const TextSubtitleGray = styled.Text`
     font-size: 15px;
     color: #333;
     margin-top: 18px;
+`
+
+export const RegisterContainer = styled.View`
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 22.5% 5% 5% 5%;
+    padding: 10px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+`
+
+export const TextTitle = styled.Text`
+    font-size: 25px;
+    color: #f12525; 
+    marginBottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
 `
 
 // #f12525

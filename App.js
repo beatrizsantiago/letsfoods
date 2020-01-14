@@ -46,7 +46,7 @@ export default createAppContainer(
         {
             transition: (
                 <Transition.Sequence>
-                    <Transition.Out type="fade" durationMs={400} />
+                    <Transition.Out type="slide-left" durationMs={20} />
                     <Transition.In type="scale" durationMs={200} />
                 </Transition.Sequence>
             ),
