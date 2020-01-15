@@ -36,3 +36,22 @@ export const ScrollHorizontal = styled.ScrollView`
     width: 100%;
     margin: 5px 0px;
 `
+
+export const ScrollGray = styled.ScrollView`
+    flex: 1;
+    width: 100%;
+    background-color: #f5f5f5;
+`
+
+export const Line = styled.View`
+    width: 92%;
+    height: 1px;
+    margin: 5px 4%;
+    background-color: #e0e0e0;
+`
+
+export const Row = styled.View`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+`

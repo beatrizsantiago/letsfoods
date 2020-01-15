@@ -129,9 +129,3 @@ export const BoxIcon = styled.View`
     justify-content: center;
     align-items: center;
 `
-export const Line = styled.View`
-    width: 92%;
-    height: 1px;
-    margin: 5px 4%;
-    background-color: #e0e0e0;
-`

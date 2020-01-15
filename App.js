@@ -50,6 +50,9 @@ const HomeStack = createStackNavigator(
     {
         Home: { screen: Home },
         Restaurant: { screen: Restaurant }
+    },
+    {
+        initialRouteName: 'Restaurant',
     }
 )
 

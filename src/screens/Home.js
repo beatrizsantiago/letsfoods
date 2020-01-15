@@ -3,10 +3,10 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 
-import { ContainerGray, ContainerScroll, ScrollHorizontal } from './styles/MainStyled'
+import { ContainerGray, ContainerScroll, ScrollHorizontal, Line } from './styles/MainStyled'
 import {
     BoxImage, ImageBox, CardBox, LabelTitle, BoxItemScroll, CircleIcon, ImageIcon, LargeCard, ImageView, ImageCard, BodyCard, TitleCard,
-    TextCard, TextCardScratched, RowItemsCard, BoxIcon, Line
+    TextCard, TextCardScratched, RowItemsCard, BoxIcon
 } from './styles/HomeStyled'
 
 import burger from '../assets/icons/burger.png'
