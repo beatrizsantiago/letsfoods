@@ -35,5 +35,4 @@ export const ContainerScroll = styled.ScrollView`
 export const ScrollHorizontal = styled.ScrollView`
     width: 100%;
     margin: 5px 0px;
-    padding: 5px;
 `
