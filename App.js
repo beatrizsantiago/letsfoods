@@ -9,8 +9,12 @@ import { Transition } from 'react-native-reanimated'
 import Splash from './src/screens/Splash'
 import Login from './src/screens/Login'
 import Register from './src/screens/Register'
+
 import Home from './src/screens/Home'
+import Restaurant from './src/screens/Restaurant'
+
 import Search from './src/screens/Search'
+
 import Profile from './src/screens/Profile'
 
 import Icon from 'react-native-vector-icons/AntDesign'
@@ -44,7 +48,8 @@ const AuthStack = createStackNavigator(
 
 const HomeStack = createStackNavigator(
     {
-        Home: { screen: Home }
+        Home: { screen: Home },
+        Restaurant: { screen: Restaurant }
     }
 )
 
@@ -98,9 +103,10 @@ export default createAppContainer(
             App: TabBottom
         },
         {
+            initialRouteName: 'App',
             transition: (
                 <Transition.Sequence>
-                    <Transition.Out type="slide-left" durationMs={20} />
+                    <Transition.Out type="fade" durationMs={20} />
                     <Transition.In type="scale" durationMs={200} />
                 </Transition.Sequence>
             ),
