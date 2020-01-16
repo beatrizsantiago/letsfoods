@@ -54,7 +54,7 @@ const HomeStack = createStackNavigator(
         MenuRestaurant: { screen: MenuRestaurant },
     },
     {
-        initialRouteName: 'Restaurant',
+        initialRouteName: 'Home',
     }
 )
 
@@ -108,7 +108,7 @@ export default createAppContainer(
             App: TabBottom
         },
         {
-            initialRouteName: 'App',
+            initialRouteName: 'Splash',
             transition: (
                 <Transition.Sequence>
                     <Transition.Out type="fade" durationMs={20} />
