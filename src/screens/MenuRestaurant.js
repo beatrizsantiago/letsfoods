@@ -12,7 +12,7 @@ export default MenuRestaurant = props => {
     return (
         <ContainerGray>
             <ViewRed />
-            <ContainerScroll>
+            <ContainerScroll showsVerticalScrollIndicator={false}>
                 <ViewIcons>
                     <TouchableOpacity onPress={() => props.navigation.goBack()}>
                         <IconAnt name="arrowleft" size={30} color="#fff" />

@@ -59,7 +59,7 @@ export const RowItemsDetails = styled.View`
 
 export const TextIcon = styled.Text`
     color: #7d7d7d;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 5px;
 `
 
@@ -152,13 +152,13 @@ export const ViewCardMenu = styled.TouchableOpacity`
     align-items: center;
     width: 100%;
     height: 90px;
-    margin: 8px 0px 0px 0px;
+    margin: 5px 0px;
 `
 
 export const CardMenu = styled.View`
     display: flex;
     justify-content: center;
-    width: 310px;
+    width: 76%;
     height: 100%;
     padding: 15px 60px;
     border-radius: 20px;
@@ -187,7 +187,7 @@ export const ViewCardImage = styled.View`
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 25px;
+    left: 6%;
     width: 70px;
     height: 70px;
     border: solid 3px #f5f5f5;
@@ -205,7 +205,7 @@ export const CircleIconCard = styled.View`
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 25px;
+    right: 6%;
     width: 45px;
     height: 45px;
     border-radius: 25px;

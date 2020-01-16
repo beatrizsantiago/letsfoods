@@ -14,7 +14,7 @@ export const ViewIcons = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 15px 10px 15px;
+    margin: 20px 4% 10px 4%;
 `
 
 export const TitleMenu = styled.Text`
@@ -22,7 +22,7 @@ export const TitleMenu = styled.Text`
     color: #fff;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 15px;
+    margin-left: 4%;
     margin-bottom: 5px;
 `
 
@@ -32,15 +32,13 @@ export const ViewCardItem = styled.TouchableOpacity`
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 150px;
     padding: 6px 15px;
 `
 
 export const CardItem = styled.View`
     display: flex;
     justify-content: center;
-    width: 310px;
-    height: 100%;
+    width: 86%;
     padding: 15px 60px;
     border-radius: 20px;
     background-color: #fff;
@@ -49,7 +47,7 @@ export const CardItem = styled.View`
 export const ViewInfoItem = styled.View`
     display: flex;
     justify-content: space-between;
-    width: 235px;
+    width: 125%;
     height: 120px;
 `
     
@@ -81,7 +79,7 @@ export const ViewCardImageItem = styled.View`
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 15px;
+    left: 4%;
     width: 100px;
     height: 100px;
     border-radius: 15px;
