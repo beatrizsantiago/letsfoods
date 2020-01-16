@@ -12,6 +12,7 @@ import Register from './src/screens/Register'
 
 import Home from './src/screens/Home'
 import Restaurant from './src/screens/Restaurant'
+import MenuRestaurant from './src/screens/MenuRestaurant'
 
 import Search from './src/screens/Search'
 
@@ -49,7 +50,8 @@ const AuthStack = createStackNavigator(
 const HomeStack = createStackNavigator(
     {
         Home: { screen: Home },
-        Restaurant: { screen: Restaurant }
+        Restaurant: { screen: Restaurant },
+        MenuRestaurant: { screen: MenuRestaurant },
     },
     {
         initialRouteName: 'Restaurant',
