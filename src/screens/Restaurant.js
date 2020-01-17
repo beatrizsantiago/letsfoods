@@ -79,6 +79,8 @@ export default Restaurant = props => {
                     </RowItemsDetails>
                 </DetailsRestaurant>
 
+                <LabelTitle>Promoções</LabelTitle>
+
                 <ScrollHorizontal horizontal={true} showsHorizontalScrollIndicator={false}>
                     <BoxPromotion>
                         <CardPromotion>
@@ -164,7 +166,7 @@ export default Restaurant = props => {
                 <ViewCardMenu onPress={() => props.navigation.navigate('MenuRestaurant')}>
                     <CardMenu>
                         <ViewInfo>
-                            <InfoTitle>Hambúrgues</InfoTitle>
+                            <InfoTitle>Hambúrguer</InfoTitle>
                             <InfoSubtitle>30 itens</InfoSubtitle>
                         </ViewInfo>
                     </CardMenu>

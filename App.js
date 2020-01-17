@@ -13,6 +13,7 @@ import Register from './src/screens/Register'
 import Home from './src/screens/Home'
 import Restaurant from './src/screens/Restaurant'
 import MenuRestaurant from './src/screens/MenuRestaurant'
+import DetailsItemMenu from './src/screens/DetailsItemMenu'
 
 import Search from './src/screens/Search'
 
@@ -52,6 +53,7 @@ const HomeStack = createStackNavigator(
         Home: { screen: Home },
         Restaurant: { screen: Restaurant },
         MenuRestaurant: { screen: MenuRestaurant },
+        DetailsItemMenu: { screen: DetailsItemMenu },
     },
     {
         initialRouteName: 'Home',
@@ -108,7 +110,7 @@ export default createAppContainer(
             App: TabBottom
         },
         {
-            initialRouteName: 'Splash',
+            initialRouteName: 'App',
             transition: (
                 <Transition.Sequence>
                     <Transition.Out type="fade" durationMs={20} />

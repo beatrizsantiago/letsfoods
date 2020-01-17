@@ -15,16 +15,16 @@ export default MenuRestaurant = props => {
             <ContainerScroll showsVerticalScrollIndicator={false}>
                 <ViewIcons>
                     <TouchableOpacity onPress={() => props.navigation.goBack()}>
-                        <IconAnt name="arrowleft" size={30} color="#fff" />
+                        <IconAnt name="arrowleft" size={35} color="#fff" />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <IconAnt name="shoppingcart" size={30} color="#333" />
+                        <IconAnt name="shoppingcart" size={35} color="#333" />
                     </TouchableOpacity>
                 </ViewIcons>
 
-                <TitleMenu>Hambúrguers</TitleMenu>
+                <TitleMenu>Hambúrguer</TitleMenu>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Bib Bob</InfoTitleItem>
@@ -39,7 +39,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Cheddar</InfoTitleItem>
@@ -54,11 +54,11 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Cheddar Australiano</InfoTitleItem>
-                            <InfoDescriptionItem>Pão bola autraliano com gergelin, 2 carnes, queijo cheddar, alface, tomate e cebola.</InfoDescriptionItem>
+                            <InfoDescriptionItem>Pão bola autraliano com gergelin, 2 carnes e queijo.</InfoDescriptionItem>
                             <RowPrice>
                                 <Price>R$13,90</Price>
                             </RowPrice>
@@ -69,7 +69,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Tentador Carne</InfoTitleItem>
@@ -84,7 +84,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Tentador Frango</InfoTitleItem>
@@ -99,7 +99,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Tentador Zero Beef</InfoTitleItem>
@@ -114,7 +114,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Bob's Burger</InfoTitleItem>
@@ -129,7 +129,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Chicken Crispy</InfoTitleItem>
@@ -144,7 +144,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Crispy Bacon</InfoTitleItem>
@@ -159,7 +159,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Double Cheese</InfoTitleItem>
@@ -174,7 +174,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Bob's Artesanal</InfoTitleItem>
@@ -189,7 +189,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Parmesão Artesanal</InfoTitleItem>
@@ -204,7 +204,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Bourbon Artesanal</InfoTitleItem>
@@ -219,7 +219,7 @@ export default MenuRestaurant = props => {
                     </ViewCardImageItem>
                 </ViewCardItem>
 
-                <ViewCardItem>
+                <ViewCardItem onPress={() => props.navigation.navigate('DetailsItemMenu')}>
                     <CardItem>
                         <ViewInfoItem>
                             <InfoTitleItem>Cheese Burger</InfoTitleItem>
