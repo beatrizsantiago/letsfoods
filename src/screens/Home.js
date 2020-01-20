@@ -3,11 +3,12 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 
-import { ContainerGray, ContainerScroll, ScrollHorizontal, Line } from './styles/MainStyled'
+import { ContainerGray, ScrollGray, ScrollHorizontal, Line } from './styles/MainStyled'
 import {
     BoxImage, ImageBox, CardBox, LabelTitle, BoxItemScroll, CircleIcon, ImageIcon, LargeCard, ImageView, ImageCard, BodyCard, TitleCard,
     TextCard, TextCardScratched, RowItemsCard, BoxIcon
 } from './styles/HomeStyled'
+import { Colors } from './styles/themes/Colors'
 
 import burger from '../assets/icons/burger.png'
 import pizza from '../assets/icons/pizza.png'
@@ -22,7 +23,7 @@ import lunch from '../assets/icons/lunch.png'
 export default Home = props => {
     return (
         <ContainerGray>
-            <ContainerScroll showsVerticalScrollIndicator={false}>
+            <ScrollGray showsVerticalScrollIndicator={false}>
 
                 <ScrollHorizontal horizontal={true} showsHorizontalScrollIndicator={false}>
                     <BoxImage>
@@ -32,17 +33,17 @@ export default Home = props => {
                             <RowItemsCard>
                                 <TextCard>Pasto & Pizza</TextCard>
                                 <BoxIcon>
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                     <TextCard> 5,0</TextCard>
                                 </BoxIcon>
                             </RowItemsCard>
                             <RowItemsCard>
                                 <BoxIcon>
-                                    <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                    <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                     <TextCard>1,4km</TextCard>
                                 </BoxIcon>
                                 <BoxIcon>
@@ -60,17 +61,17 @@ export default Home = props => {
                             <RowItemsCard>
                                 <TextCard>Bob's</TextCard>
                                 <BoxIcon>
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                     <TextCard> 4,9</TextCard>
                                 </BoxIcon>
                             </RowItemsCard>
                             <RowItemsCard>
                                 <BoxIcon>
-                                    <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                    <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                     <TextCard>1,4km</TextCard>
                                 </BoxIcon>
                                 <BoxIcon>
@@ -88,17 +89,17 @@ export default Home = props => {
                             <RowItemsCard>
                                 <TextCard>Cheppitos</TextCard>
                                 <BoxIcon>
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
-                                    <IconAnt name="star" size={18} color="#ffe600" />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                                    <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                     <TextCard> 4,9</TextCard>
                                 </BoxIcon>
                             </RowItemsCard>
                             <RowItemsCard>
                                 <BoxIcon>
-                                    <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                    <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                     <TextCard>1,4km</TextCard>
                                 </BoxIcon>
                                 <BoxIcon>
@@ -191,15 +192,15 @@ export default Home = props => {
                         <TextCard>Bob's é uma rede de restaurantes de comida rápida brasileira fundada em 1952.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Burger</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1,4km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,9</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -216,15 +217,15 @@ export default Home = props => {
                         <TextCard>Mini Kalzone é uma cadeia brasileira de restaurantes casuais especializados em calzone.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Pastas</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>200m</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,9</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -241,15 +242,15 @@ export default Home = props => {
                         <TextCard>O Gigante Pastel Cheppitos foi desenvolvido para concorrer ao título de maior pastel do Brasil.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Pastas</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1,2km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,9</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -266,15 +267,15 @@ export default Home = props => {
                         <TextCard>Açaí Fit. Zero açúcar, 100% natural. A energia que você gosta, com ainda mais... Açai.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Dessert</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,9</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -291,15 +292,15 @@ export default Home = props => {
                         <TextCard>Burger King, muitas vezes abreviado como BK, é uma rede de restaurantes especializada em fast-food.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Burger</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1,4km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,6</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -316,15 +317,15 @@ export default Home = props => {
                         <TextCard>Subway é uma rede de restaurantes fast food, com especialidade em vendas de sanduíches e saladas.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Burger</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1,4km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>4,6</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
@@ -341,21 +342,21 @@ export default Home = props => {
                         <TextCard>McDonald's Corporation é a maior cadeia mundial de restaurantes de fast food de hambúrguer.</TextCard>
                         <RowItemsCard>
                             <BoxIcon>
-                                <IconMComm name="silverware-variant" size={18} color="#7d7d7d" />
+                                <IconMComm name="silverware-variant" size={18} color={Colors.grayMiddle} />
                                 <TextCard>Burger</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="enviromento" size={18} color="#7d7d7d" />
+                                <IconAnt name="enviromento" size={18} color={Colors.grayMiddle} />
                                 <TextCard>1,4km</TextCard>
                             </BoxIcon>
                             <BoxIcon>
-                                <IconAnt name="star" size={18} color="#ffe600" />
+                                <IconAnt name="star" size={18} color={Colors.yellowStar} />
                                 <TextCard>2,2</TextCard>
                             </BoxIcon>
                         </RowItemsCard>
                     </BodyCard>
                 </LargeCard>
-            </ContainerScroll>
+            </ScrollGray>
         </ContainerGray>
     )
 }

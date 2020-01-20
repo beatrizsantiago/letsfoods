@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/native'
+import { Colors } from './themes/Colors'
 
 export const Header = styled.View`
     width: 100%;
@@ -12,7 +13,7 @@ export const HalfCircle = styled.View`
     width: 72%;
     height: 90%;
     border-bottom-left-radius: 500px;
-    background-color: #f12525;
+    background-color: ${Colors.redFood};
 `
 
 export const ViewButtons = styled.View`
@@ -43,7 +44,7 @@ export const CircleContainerImage = styled.View`
     width: 220px;
     height: 220px;
     border-radius: 110px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ImageCircle = styled.Image`
@@ -55,14 +56,14 @@ export const ImageCircle = styled.Image`
 export const TextTitle = styled.Text`
     margin: 0px 10px 10px 10px;
     font-size: 25px;
-    color: #333;
+    color: ${Colors.grayDark};
     font-weight: bold;
 `
     
 export const Description = styled.Text`
     margin: 0px 30px;
     font-size: 14px;
-    color: #333;
+    color: ${Colors.grayDark};
     text-align: center;
 `
 
@@ -74,18 +75,18 @@ export const HeaderList = styled.View`
     margin-top: 10px;
     padding: 10px;
     border-bottom-width: 2px;
-    border-bottom-color: #f12525;
-    background-color: #fff;
+    border-bottom-color: ${Colors.redFood};
+    background-color: ${Colors.white};
 `
 
 export const TitleHeader = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 18px;
     font-weight: bold;
 `
 
 export const SubtitleHeader = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 13px;
 `
 
@@ -98,26 +99,26 @@ export const ItemList = styled.View`
     height: 60px;
     padding: 5px 10px;
     border-bottom-width: 1px;
-    border-bottom-color: #f5f5f5;
-    background-color: #fff;
+    border-bottom-color: ${Colors.grayUltralight};
+    background-color: ${Colors.white};
 `
 
 export const ViewLabels = styled.View`
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
     height: 100%;
     padding: 3px 0px;
 `
 
 export const TitleItem = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 16px;
     font-weight: bold;
 `
 
 export const SubtitleItem = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 12px;
 `
 
@@ -125,7 +126,7 @@ export const ViewMore = styled.View`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28%;
+    width: 35%;
     height: 100%;
 `
 
@@ -138,7 +139,7 @@ export const ViewRadius = styled.View`
     height: 80%;
     padding: 8px;
     border-radius: 40px;
-    background-color: #f12525;
+    background-color: ${Colors.redFood};
 `
 
 export const BtnRadius = styled.TouchableOpacity`
@@ -148,7 +149,7 @@ export const BtnRadius = styled.TouchableOpacity`
     width: 28px;
     height: 28px;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const BtnRadiusSoft = styled.TouchableOpacity`
@@ -158,11 +159,11 @@ export const BtnRadiusSoft = styled.TouchableOpacity`
     width: 28px;
     height: 28px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: ${Colors.whiteTransparent};
 `
 
 export const Number = styled.Text`
-    color: #fff;
+    color: ${Colors.white};
     font-size: 16px;
     font-weight: bold;
 `
@@ -175,7 +176,7 @@ export const ViewBottom = styled.View`
     width: 100%;
     height: 60px;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: ${Colors.grayUltralight};
 `
 
 export const ButtonAdd = styled.View`
@@ -186,7 +187,7 @@ export const ButtonAdd = styled.View`
     width: 35%;
     height: 100%;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ButtonTouch = styled.TouchableOpacity`
@@ -200,5 +201,5 @@ export const ButtonConfirm = styled.TouchableOpacity`
     width: 60%;
     height: 100%;
     border-radius: 8px;
-    background-color: #f12525;
+    background-color: ${Colors.redFood};
 `

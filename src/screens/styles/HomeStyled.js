@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/native'
+import { Colors } from './themes/Colors'
 
 export const BoxImage = styled.View`
     display: flex;
@@ -27,13 +28,14 @@ export const CardBox = styled.View`
     height: 90px;
     padding: 8px 12px;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const LabelTitle = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 20px;
     font-weight: bold;
+    margin: 0px 3%;
 `
 
 export const BoxItemScroll = styled.View`
@@ -51,7 +53,7 @@ export const CircleIcon = styled.TouchableOpacity`
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ImageIcon = styled.Image`
@@ -62,12 +64,12 @@ export const ImageIcon = styled.Image`
 export const LargeCard = styled.TouchableOpacity`
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 94%;
     height: 120px;
-    margin: 6px 0px;
+    margin: 6px 3%;
     padding: 8px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ImageView = styled.View`
@@ -77,7 +79,7 @@ export const ImageView = styled.View`
     width: 30%;
     height: 100%;
     padding: 3px;
-    border: solid 1px #ebebeb;
+    border: solid 1px ${Colors.grayLight};
     border-radius: 20px;
 `
 
@@ -97,18 +99,18 @@ export const BodyCard = styled.View`
 `
 
 export const TitleCard = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 18px;
     font-weight: bold;
 `
 
 export const TextCard = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 14px;
 `
 
 export const TextCardScratched = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 12px;
     text-decoration: line-through;
     margin-Left: 2px;

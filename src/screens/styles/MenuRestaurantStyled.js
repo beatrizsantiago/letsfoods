@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components/native'
+import { Colors } from './themes/Colors'
 
 export const ViewRed = styled.View`
     position: absolute;
     left: 0px;
     width: 230px;
     height: 100%;
-    background-color: #f12525;
+    background-color: ${Colors.redFood};
 `
 
 export const ViewIcons = styled.View`
@@ -19,7 +20,7 @@ export const ViewIcons = styled.View`
 
 export const TitleMenu = styled.Text`
     width: 200px;
-    color: #fff;
+    color: ${Colors.white};
     font-size: 30px;
     font-weight: bold;
     margin-left: 4%;
@@ -41,7 +42,7 @@ export const CardItem = styled.View`
     width: 86%;
     padding: 15px 60px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ViewInfoItem = styled.View`
@@ -52,13 +53,13 @@ export const ViewInfoItem = styled.View`
 `
     
 export const InfoTitleItem = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 22px;
     font-weight: bold;
 `
 
 export const InfoDescriptionItem = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 15px;
 `
 
@@ -69,7 +70,7 @@ export const RowPrice = styled.View`
 `
 
 export const Price = styled.Text`
-    color: #f12525;
+    color: ${Colors.redFood};
     font-size: 18px;
     font-weight: bold;
 `

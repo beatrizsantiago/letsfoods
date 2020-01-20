@@ -1,0 +1,15 @@
+export const Colors = {
+    redFood: '#f12525',
+    redMiddle: '#d01d1d',
+    redDark: '#752222',
+    yellowStar: '#ffe600',
+    grayUltralight: '#f5f5f5',
+    grayLight: '#ebebeb',
+    grayGrey: '#e6e6e6',
+    grayBlot: '#e6e6e6',
+    grayMiddle: '#7d7d7d',
+    grayDark: '#333333',
+    white: '#ffffff',
+    whiteTransparent: 'rgba(255, 255, 255, 0.4)',
+    whiteSemiTransparent: 'rgba(255, 255, 255, 0.8)',
+}

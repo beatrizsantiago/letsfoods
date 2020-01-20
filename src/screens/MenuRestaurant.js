@@ -7,6 +7,7 @@ import {
     ViewRed, ViewIcons, TitleMenu, ViewCardItem, CardItem, ViewInfoItem, InfoTitleItem, InfoDescriptionItem, RowPrice, Price,
     ViewCardImageItem, ImageCardItem
 } from './styles/MenuRestaurantStyled'
+import { Colors } from './styles/themes/Colors'
 
 export default MenuRestaurant = props => {
     return (
@@ -15,10 +16,10 @@ export default MenuRestaurant = props => {
             <ContainerScroll showsVerticalScrollIndicator={false}>
                 <ViewIcons>
                     <TouchableOpacity onPress={() => props.navigation.goBack()}>
-                        <IconAnt name="arrowleft" size={35} color="#fff" />
+                        <IconAnt name="arrowleft" size={35} color={Colors.white} />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <IconAnt name="shoppingcart" size={35} color="#333" />
+                        <IconAnt name="shoppingcart" size={35} color={Colors.grayDark} />
                     </TouchableOpacity>
                 </ViewIcons>
 

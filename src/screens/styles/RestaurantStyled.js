@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/native'
+import { Colors } from './themes/Colors'
 
 export const ViewButtons = styled.View`
     display: flex;
@@ -18,7 +19,7 @@ export const CircleButton = styled.TouchableOpacity`
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: ${Colors.whiteSemiTransparent};
 `
 
 export const BannerImage = styled.Image`
@@ -33,7 +34,7 @@ export const DetailsRestaurant = styled.View`
     height: 200px;
     padding: 12px 15px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const Spacing = styled.View`
@@ -44,7 +45,7 @@ export const Spacing = styled.View`
 export const TextStars = styled.Text`
     font-size: 18px;
     margin: 0px 6px;
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
 `
 
 export const RowItemsDetails = styled.View`
@@ -58,14 +59,14 @@ export const RowItemsDetails = styled.View`
 
 
 export const TextIcon = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 14px;
     margin-left: 5px;
 `
 
 export const TextSmall = styled.Text`
     width: 92%;
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 14px;
     margin-left: 5px;
 `
@@ -88,7 +89,7 @@ export const CircleImagePromo = styled.View`
     width: 120px;
     height: 120px;
     border-radius: 60px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ImageCircle = styled.Image`
@@ -105,7 +106,7 @@ export const CardPromotion = styled.View`
     height: 260px;
     padding: 60px 10px 10px 10px;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ViewLabelTitle = styled.View`
@@ -118,7 +119,7 @@ export const ViewLabelTitle = styled.View`
 
 export const TitleCardPromo = styled.Text`
     width: 100%;
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -135,7 +136,7 @@ export const ViewLabelDescription = styled.View`
 export const DescriptionCardPromo = styled.Text`
     width: 100%;
     font-size: 12px;
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     text-align: center;
 `
 
@@ -162,7 +163,7 @@ export const CardMenu = styled.View`
     height: 100%;
     padding: 15px 60px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: ${Colors.white};
 `
 
 export const ViewInfo = styled.View`
@@ -172,13 +173,13 @@ export const ViewInfo = styled.View`
 `
 
 export const InfoTitle = styled.Text`
-    color: #333;
+    color: ${Colors.grayDark};
     font-size: 24px;
     font-weight: bold;
 `
 
 export const InfoSubtitle = styled.Text`
-    color: #7d7d7d;
+    color: ${Colors.grayMiddle};
     font-size: 15px;
 `
 
@@ -190,7 +191,7 @@ export const ViewCardImage = styled.View`
     left: 6%;
     width: 70px;
     height: 70px;
-    border: solid 3px #f5f5f5;
+    border: solid 3px ${Colors.grayUltralight};
     border-radius: 15px;
     background-color: #fff;
 `
@@ -209,7 +210,7 @@ export const CircleIconCard = styled.View`
     width: 45px;
     height: 45px;
     border-radius: 25px;
-    background-color: #f12525;
+    background-color: ${Colors.redFood};
 `
 
 // export const BoxPromotion = styled.TouchableOpacity`

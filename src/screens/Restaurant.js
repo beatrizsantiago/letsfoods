@@ -3,14 +3,16 @@ import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
 import IconIon from 'react-native-vector-icons/Ionicons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
+import { NavigationActions } from 'react-navigation'
 
-import { ScrollGray, ContainerGray, Line, Row, ScrollHorizontal, ContainerScroll } from './styles/MainStyled'
+import { ScrollGray, ContainerGray, Line, Row, ScrollHorizontal } from './styles/MainStyled'
 import { LabelTitle, BoxIcon, TextCard, TextCardScratched } from './styles/HomeStyled'
 import {
     ViewButtons, CircleButton, BannerImage, DetailsRestaurant, Spacing, TextStars, RowItemsDetails, TextIcon, TextSmall, BoxPromotion,
     CircleImagePromo, ImageCircle, CardPromotion, ViewLabelTitle, TitleCardPromo, ViewLabelDescription, DescriptionCardPromo,
     ViewLabelPromotion, ViewCardMenu, CardMenu, ViewInfo, InfoTitle, InfoSubtitle, ViewCardImage, ImageCard, CircleIconCard
 } from './styles/RestaurantStyled'
+import { Colors } from './styles/themes/Colors'
 
 import burger from '../assets/icons/burger-food.png'
 import milkshake from '../assets/icons/milkshake.png'
@@ -27,10 +29,10 @@ export default Restaurant = props => {
 
                 <ViewButtons>
                     <CircleButton onPress={() => props.navigation.goBack()}>
-                        <IconIon name="ios-arrow-back" color="#333" size={34} style={{ marginRight: 3 }} />
+                        <IconIon name="ios-arrow-back" color={Colors.grayDark} size={34} style={{ marginRight: 3 }} />
                     </CircleButton>
-                    <CircleButton>
-                        <IconAnt name="shoppingcart" color="#333" size={34} style={{ marginRight: 3 }} />
+                    <CircleButton onPress={() => props.navigation.navigate('Cart')} >
+                        <IconAnt name="shoppingcart" color={Colors.grayDark} size={34} style={{ marginRight: 3 }} />
                     </CircleButton>
                 </ViewButtons>
 
@@ -38,26 +40,26 @@ export default Restaurant = props => {
                     <LabelTitle>Bob's</LabelTitle>
 
                     <Row>
-                        <IconAnt name="star" size={18} color="#ffe600" />
-                        <IconAnt name="star" size={18} color="#ffe600" />
-                        <IconAnt name="star" size={18} color="#ffe600" />
-                        <IconAnt name="star" size={18} color="#ffe600" />
-                        <IconAnt name="star" size={18} color="#ffe600" />
+                        <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                        <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                        <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                        <IconAnt name="star" size={18} color={Colors.yellowStar} />
+                        <IconAnt name="star" size={18} color={Colors.yellowStar} />
                         <TextStars>4,9</TextStars>
                         <TextCard>(3.569 avaliações)</TextCard>
                     </Row>
 
                     <RowItemsDetails>
                         <BoxIcon>
-                            <IconMComm name="silverware-variant" size={22} color="#7d7d7d" />
+                            <IconMComm name="silverware-variant" size={22} color={Colors.grayMiddle} />
                             <TextIcon>Burger</TextIcon>
                         </BoxIcon>
                         <BoxIcon>
-                            <IconAnt name="enviromento" size={22} color="#7d7d7d" />
+                            <IconAnt name="enviromento" size={22} color={Colors.grayMiddle} />
                             <TextIcon>1,4km</TextIcon>
                         </BoxIcon>
                         <BoxIcon>
-                            <IconAnt name="clockcircleo" size={22} color="#7d7d7d" />
+                            <IconAnt name="clockcircleo" size={22} color={Colors.grayMiddle} />
                             <TextIcon>09:00 - 22:00</TextIcon>
                         </BoxIcon>
                     </RowItemsDetails>
@@ -66,14 +68,14 @@ export default Restaurant = props => {
 
                     <RowItemsDetails>
                         <BoxIcon>
-                            <IconMComm name="store" size={22} color="#7d7d7d" />
+                            <IconMComm name="store" size={22} color={Colors.grayMiddle} />
                             <TextSmall>Praça de alimentação Iguatemi</TextSmall>
                         </BoxIcon>
                     </RowItemsDetails>
 
                     <RowItemsDetails>
                         <BoxIcon>
-                            <IconMComm name="home-outline" size={22} color="#7d7d7d" />
+                            <IconMComm name="home-outline" size={22} color={Colors.grayMiddle} />
                             <TextSmall>Av. Washington Soares, 85 - Edson Queiroz, Fortaleza - CE</TextSmall>
                         </BoxIcon>
                     </RowItemsDetails>
@@ -174,7 +176,7 @@ export default Restaurant = props => {
                         <ImageCard source={burger} />
                     </ViewCardImage>
                     <CircleIconCard>
-                        <IconIon name="ios-arrow-forward" color="#fff" size={34} style={{ marginLeft: 3 }} />
+                        <IconIon name="ios-arrow-forward" color={Colors.white} size={34} style={{ marginLeft: 3 }} />
                     </CircleIconCard>
                 </ViewCardMenu>
 
@@ -189,7 +191,7 @@ export default Restaurant = props => {
                         <ImageCard source={milkshake} />
                     </ViewCardImage>
                     <CircleIconCard>
-                        <IconIon name="ios-arrow-forward" color="#fff" size={34} style={{ marginLeft: 3 }} />
+                        <IconIon name="ios-arrow-forward" color={Colors.white} size={34} style={{ marginLeft: 3 }} />
                     </CircleIconCard>
                 </ViewCardMenu>
 
@@ -204,7 +206,7 @@ export default Restaurant = props => {
                         <ImageCard source={fries} />
                     </ViewCardImage>
                     <CircleIconCard>
-                        <IconIon name="ios-arrow-forward" color="#fff" size={34} style={{ marginLeft: 3 }} />
+                        <IconIon name="ios-arrow-forward" color={Colors.white} size={34} style={{ marginLeft: 3 }} />
                     </CircleIconCard>
                 </ViewCardMenu>
 
@@ -219,7 +221,7 @@ export default Restaurant = props => {
                         <ImageCard source={salads} />
                     </ViewCardImage>
                     <CircleIconCard>
-                        <IconIon name="ios-arrow-forward" color="#fff" size={34} style={{ marginLeft: 3 }} />
+                        <IconIon name="ios-arrow-forward" color={Colors.white} size={34} style={{ marginLeft: 3 }} />
                     </CircleIconCard>
                 </ViewCardMenu>
 
@@ -230,6 +232,6 @@ export default Restaurant = props => {
 
 Restaurant.navigationOptions = ({ navigation }) => {
     return ({
-        header: null
+        header: null,
     })
 }

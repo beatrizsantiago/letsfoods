@@ -9,6 +9,7 @@ import {
     SubtitleHeader, ItemList, ViewLabels, TitleItem, SubtitleItem, ViewMore, ViewRadius, BtnRadius, BtnRadiusSoft, Number, ViewBottom,
     ButtonAdd, ButtonTouch, ButtonConfirm
 } from './styles/DetailsItemMenuStyled'
+import { Colors } from './styles/themes/Colors'
 
 export default DetailsItemMenu = props => {
     return (
@@ -20,10 +21,10 @@ export default DetailsItemMenu = props => {
 
                     <ViewButtons>
                         <TouchableOpacity onPress={() => props.navigation.goBack()}>
-                            <IconAnt name="arrowleft" size={30} color="#333" />
+                            <IconAnt name="arrowleft" size={35} color={Colors.grayDark} />
                         </TouchableOpacity>
                         <TouchableOpacity>
-                            <IconAnt name="shoppingcart" size={30} color="#fff" />
+                            <IconAnt name="shoppingcart" size={35} color={Colors.white} />
                         </TouchableOpacity>
                     </ViewButtons>
 
@@ -51,11 +52,11 @@ export default DetailsItemMenu = props => {
                     <ViewMore>
                         <ViewRadius>
                             <BtnRadiusSoft>
-                                <IconEntypo name="minus" size={24} color="#333" />
+                                <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                             </BtnRadiusSoft>
                             <Number>0</Number>
                             <BtnRadius>
-                                <IconEntypo name="plus" size={24} color="#333" />
+                                <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                             </BtnRadius>
                         </ViewRadius>
                     </ViewMore>
@@ -69,11 +70,11 @@ export default DetailsItemMenu = props => {
                     <ViewMore>
                         <ViewRadius>
                             <BtnRadiusSoft>
-                                <IconEntypo name="minus" size={24} color="#333" />
+                                <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                             </BtnRadiusSoft>
                             <Number>0</Number>
                             <BtnRadius>
-                                <IconEntypo name="plus" size={24} color="#333" />
+                                <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                             </BtnRadius>
                         </ViewRadius>
                     </ViewMore>
@@ -87,11 +88,11 @@ export default DetailsItemMenu = props => {
                     <ViewMore>
                         <ViewRadius>
                             <BtnRadiusSoft>
-                                <IconEntypo name="minus" size={24} color="#333" />
+                                <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                             </BtnRadiusSoft>
                             <Number>0</Number>
                             <BtnRadius>
-                                <IconEntypo name="plus" size={24} color="#333" />
+                                <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                             </BtnRadius>
                         </ViewRadius>
                     </ViewMore>
@@ -105,11 +106,11 @@ export default DetailsItemMenu = props => {
                     <ViewMore>
                         <ViewRadius>
                             <BtnRadiusSoft>
-                                <IconEntypo name="minus" size={24} color="#333" />
+                                <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                             </BtnRadiusSoft>
                             <Number>0</Number>
                             <BtnRadius>
-                                <IconEntypo name="plus" size={24} color="#333" />
+                                <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                             </BtnRadius>
                         </ViewRadius>
                     </ViewMore>
@@ -123,11 +124,11 @@ export default DetailsItemMenu = props => {
                     <ViewMore>
                         <ViewRadius>
                             <BtnRadiusSoft>
-                                <IconEntypo name="minus" size={24} color="#333" />
+                                <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                             </BtnRadiusSoft>
                             <Number>0</Number>
                             <BtnRadius>
-                                <IconEntypo name="plus" size={24} color="#333" />
+                                <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                             </BtnRadius>
                         </ViewRadius>
                     </ViewMore>
@@ -138,11 +139,11 @@ export default DetailsItemMenu = props => {
             <ViewBottom>
                 <ButtonAdd>
                     <ButtonTouch>
-                        <IconEntypo name="minus" size={24} color="#333" />
+                        <IconEntypo name="minus" size={24} color={Colors.grayDark} />
                     </ButtonTouch>
                     <TitleItem>1</TitleItem>
                     <ButtonTouch>
-                        <IconEntypo name="plus" size={24} color="#333" />
+                        <IconEntypo name="plus" size={24} color={Colors.grayDark} />
                     </ButtonTouch>
                 </ButtonAdd>
                 <ButtonConfirm>
