@@ -19,6 +19,8 @@ import DetailsItemMenu from './src/screens/DetailsItemMenu'
 
 import Search from './src/screens/Search'
 
+import Orders from './src/screens/Orders'
+
 import Profile from './src/screens/Profile'
 
 import Icon from 'react-native-vector-icons/AntDesign'
@@ -71,6 +73,12 @@ const SearchStack = createStackNavigator(
     }
 )
 
+const OrdersStack = createStackNavigator(
+    {
+        Orders: { screen: Orders },
+    }
+)
+
 const ProfileStack = createStackNavigator(
     {
         Profile: { screen: Profile }
@@ -90,6 +98,12 @@ const TabBottom = createMaterialBottomTabNavigator(
             navigationOptions: () => ({
 				tabBarIcon: <Icon name="search1" size={25} color={Colors.white} />
 			})
+        },
+        Orders: {
+            screen: OrdersStack,
+            navigationOptions: () => ({
+                tabBarIcon: <Icon name="bars" size={25} color={Colors.white} />
+            })
         },
         Profile: {
             screen: ProfileStack,

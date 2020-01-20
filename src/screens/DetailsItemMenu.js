@@ -23,7 +23,7 @@ export default DetailsItemMenu = props => {
                         <TouchableOpacity onPress={() => props.navigation.goBack()}>
                             <IconAnt name="arrowleft" size={35} color={Colors.grayDark} />
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
                             <IconAnt name="shoppingcart" size={35} color={Colors.white} />
                         </TouchableOpacity>
                     </ViewButtons>
