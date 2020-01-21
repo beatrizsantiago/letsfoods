@@ -89,35 +89,39 @@ const TabBottom = createMaterialBottomTabNavigator(
     {
         Home: {
             screen: HomeStack,
-            navigationOptions: () => ({
-				tabBarIcon: <Icon name="home" size={25} color={Colors.white} />
-			})
+            navigationOptions: (props) => ({
+                tabBarIcon: <Icon name="home" size={25} color={Colors.white} />,
+                tabBarVisible: props.navigation.state.index == 0 ? true : false
+            })
         },
         Search: {
             screen: SearchStack,
-            navigationOptions: () => ({
-				tabBarIcon: <Icon name="search1" size={25} color={Colors.white} />
-			})
+            navigationOptions: (props) => ({
+                tabBarIcon: <Icon name="search1" size={25} color={Colors.white} />,
+                tabBarVisible: props.navigation.state.index == 0 ? true : false
+            })
         },
         Orders: {
             screen: OrdersStack,
-            navigationOptions: () => ({
-                tabBarIcon: <Icon name="bars" size={25} color={Colors.white} />
+            navigationOptions: (props) => ({
+                tabBarIcon: <Icon name="bars" size={25} color={Colors.white} />,
+                tabBarVisible: props.navigation.state.index == 0 ? true : false
             })
         },
         Profile: {
             screen: ProfileStack,
-            navigationOptions: () => ({
-				tabBarIcon: <Icon name="user" size={25} color={Colors.white} />
-			})
+            navigationOptions: (props) => ({
+                tabBarIcon: <Icon name="user" size={25} color={Colors.white} />,
+                tabBarVisible: props.navigation.state.index == 0 ? true : false
+            })
         },
     },
     {
         initialRouteName: 'Home',
-		activeColor: Colors.white,
-		inactiveColor: Colors.redDark,
-		shifting: true,
-		barStyle: { backgroundColor: Colors.redFood },
+        activeColor: Colors.white,
+        inactiveColor: Colors.redDark,
+        shifting: true,
+        barStyle: { backgroundColor: Colors.redFood },
     }
 )
 

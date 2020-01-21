@@ -5,8 +5,8 @@ import IconAnt from 'react-native-vector-icons/AntDesign'
 
 import { ContainerGray, ScrollGray, ScrollHorizontal, Line } from './styles/MainStyled'
 import {
-    BoxImage, ImageBox, CardBox, LabelTitle, BoxItemScroll, CircleIcon, ImageIcon, LargeCard, ImageView, ImageCard, BodyCard, TitleCard,
-    TextCard, TextCardScratched, RowItemsCard, BoxIcon
+    Header, TextHeader, BoxImage, ImageBox, CardBox, LabelTitle, BoxItemScroll, CircleIcon, ImageIcon, LargeCard, ImageView, ImageCard, BodyCard, 
+    TitleCard, TextCard, TextCardScratched, RowItemsCard, BoxIcon
 } from './styles/HomeStyled'
 import { Colors } from './styles/themes/Colors'
 
@@ -24,6 +24,12 @@ export default Home = props => {
     return (
         <ContainerGray>
             <ScrollGray showsVerticalScrollIndicator={false}>
+                <Header>
+                    <TextHeader><Text style={{ color: Colors.redFood }}>Let's</Text> Foods</TextHeader>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
+                        <IconAnt name="shoppingcart" size={32} color={Colors.grayDark} />
+                    </TouchableOpacity>
+                </Header>
 
                 <ScrollHorizontal horizontal={true} showsHorizontalScrollIndicator={false}>
                     <BoxImage>
@@ -359,4 +365,11 @@ export default Home = props => {
             </ScrollGray>
         </ContainerGray>
     )
+}
+
+
+Home.navigationOptions = ({ navigation }) => {
+    return ({
+        header: null
+    })
 }

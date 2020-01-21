@@ -10,3 +10,9 @@ export default Search = props => {
         </ContainerCenter>
     )
 }
+
+Search.navigationOptions = ({ navigation }) => {
+    return ({
+        header: null
+    })
+}

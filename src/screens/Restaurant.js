@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
+import React, { useState, useEffect } from 'react'
+import { View, Text, Animated, Easing } from 'react-native'
 import IconIon from 'react-native-vector-icons/Ionicons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -20,10 +20,74 @@ import fries from '../assets/icons/french-fries.png'
 import salads from '../assets/icons/salad.png'
 
 export default Restaurant = props => {
+
+    const boxOpacityValue = new Animated.Value(0)
+    const boxOpacity = boxOpacityValue.interpolate({
+        inputRange: [0, 0.25, 0.5, 0.75, 1],
+        outputRange: [0, 0.25, 0.5, 0.75, 1]
+    })
+
+    const imageTranslateYValue = new Animated.Value(0)
+    const imageMoveY = imageTranslateYValue.interpolate({
+        inputRange: [0, 1],
+        outputRange: [-260, 0]
+    })
+
+    const textScaleValue = new Animated.Value(0)
+    const textScale = textScaleValue.interpolate({
+        inputRange: [0, 1],
+        outputRange: [0, 1]
+    })
+
+    const scrollTranslateXValue = new Animated.Value(0)
+    const scrollMoveX = scrollTranslateXValue.interpolate({
+        inputRange: [0, 1],
+        outputRange: [600, 0]
+    })
+
+    useEffect(() => {
+        animate()
+    }, [])
+
+    const animate = () => {
+        boxOpacityValue.setValue(0)
+        imageTranslateYValue.setValue(0)
+        textScaleValue.setValue(0)
+        scrollTranslateXValue.setValue(0)
+
+        Animated.parallel([
+            Animated.timing(boxOpacityValue, {
+                toValue: 1,
+                duration: 800,
+                easing: Easing.linear
+            }),
+            Animated.timing(imageTranslateYValue, {
+                toValue: 1,
+                duration: 500,
+                easing: Easing.linear
+            }),
+            Animated.timing(textScaleValue, {
+                toValue: 1,
+                duration: 500,
+                easing: Easing.ease
+            }),
+            Animated.timing(scrollTranslateXValue, {
+                toValue: 1,
+                duration: 500,
+                easing: Easing.linear
+            }),
+        ]).start()
+    }
+
     return (
         <ScrollGray showsVerticalScrollIndicator={false}>
             <ContainerGray>
-                <BannerImage resizeMode="cover" source={{ uri: 'https://media-cdn.tripadvisor.com/media/photo-s/07/8d/a1/a3/bob-s.jpg' }} />
+                <BannerImage
+                    as={Animated.Image}
+                    style={{ transform: [{ translateY: imageMoveY }] }}
+                    resizeMode="cover"
+                    source={{ uri: 'https://media-cdn.tripadvisor.com/media/photo-s/07/8d/a1/a3/bob-s.jpg' }}
+                />
 
                 <Spacing />
 
@@ -36,7 +100,7 @@ export default Restaurant = props => {
                     </CircleButton>
                 </ViewButtons>
 
-                <DetailsRestaurant>
+                <DetailsRestaurant as={Animated.View} {...props} style={{ opacity: boxOpacity }}>
                     <LabelTitle>Bob's</LabelTitle>
 
                     <Row>
@@ -81,9 +145,9 @@ export default Restaurant = props => {
                     </RowItemsDetails>
                 </DetailsRestaurant>
 
-                <LabelTitle>Promoções</LabelTitle>
+                <LabelTitle as={Animated.Text} style={{ transform: [{ scale: textScale }] }}>Promoções</LabelTitle>
 
-                <ScrollHorizontal horizontal={true} showsHorizontalScrollIndicator={false}>
+                <ScrollHorizontal as={Animated.ScrollView} style={{ transform: [{ translateX: scrollMoveX }] }} horizontal={true} showsHorizontalScrollIndicator={false}>
                     <BoxPromotion>
                         <CardPromotion>
                             <ViewLabelTitle>

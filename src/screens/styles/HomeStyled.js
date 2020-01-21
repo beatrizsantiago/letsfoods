@@ -2,6 +2,22 @@ import React from 'react'
 import styled from 'styled-components/native'
 import { Colors } from './themes/Colors'
 
+export const Header = styled.View`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 5px 18px;
+`
+
+export const TextHeader = styled.Text`
+    color: ${Colors.grayDark};
+    font-size: 22px;
+    font-weight: bold;
+`
+
 export const BoxImage = styled.View`
     display: flex;
     justify-content: center;

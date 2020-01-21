@@ -10,3 +10,9 @@ export default Profile = props => {
         </ContainerCenter>
     )
 }
+
+Profile.navigationOptions = ({ navigation }) => {
+    return ({
+        header: null
+    })
+}

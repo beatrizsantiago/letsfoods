@@ -10,3 +10,9 @@ export default Orders = props => {
         </ContainerCenter>
     )
 }
+
+Orders.navigationOptions = ({ navigation }) => {
+    return ({
+        header: null
+    })
+}
