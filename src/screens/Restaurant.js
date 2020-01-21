@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { View, Text, Animated, Easing } from 'react-native'
+import { View, Text, Animated, Easing, Dimensions } from 'react-native'
 import IconIon from 'react-native-vector-icons/Ionicons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -58,22 +58,22 @@ export default Restaurant = props => {
         Animated.parallel([
             Animated.timing(boxOpacityValue, {
                 toValue: 1,
-                duration: 800,
+                duration: 1000,
                 easing: Easing.linear
             }),
             Animated.timing(imageTranslateYValue, {
                 toValue: 1,
-                duration: 500,
+                duration: 800,
                 easing: Easing.linear
             }),
             Animated.timing(textScaleValue, {
                 toValue: 1,
-                duration: 500,
-                easing: Easing.ease
+                duration: 800,
+                easing: Easing.linear
             }),
             Animated.timing(scrollTranslateXValue, {
                 toValue: 1,
-                duration: 500,
+                duration: 800,
                 easing: Easing.linear
             }),
         ]).start()
@@ -147,7 +147,7 @@ export default Restaurant = props => {
 
                 <LabelTitle as={Animated.Text} style={{ transform: [{ scale: textScale }] }}>Promoções</LabelTitle>
 
-                <ScrollHorizontal as={Animated.ScrollView} style={{ transform: [{ translateX: scrollMoveX }] }} horizontal={true} showsHorizontalScrollIndicator={false}>
+                <ScrollHorizontal as={Animated.ScrollView} style={{ transform: [{ translateX: scrollMoveX }] }} horizontal={true} showsHorizontalScrollIndicator={false} >
                     <BoxPromotion>
                         <CardPromotion>
                             <ViewLabelTitle>

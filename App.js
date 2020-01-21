@@ -133,7 +133,7 @@ export default createAppContainer(
             App: TabBottom,
         },
         {
-            initialRouteName: 'App',
+            initialRouteName: 'Splash',
             transition: (
                 <Transition.Sequence>
                     <Transition.Out type="fade" durationMs={20} />
