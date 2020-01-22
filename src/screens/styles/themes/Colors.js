@@ -3,6 +3,7 @@ export const Colors = {
     redMiddle: '#d01d1d',
     redDark: '#752222',
     yellowStar: '#ffe600',
+    success: '#1cab00',
     grayUltralight: '#f5f5f5',
     grayLight: '#ebebeb',
     grayGrey: '#e6e6e6',
