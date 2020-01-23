@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { View, Text, Animated, Easing, Dimensions } from 'react-native'
+import { View, Text, Animated, Easing, StatusBar } from 'react-native'
 import IconIon from 'react-native-vector-icons/Ionicons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -81,6 +81,7 @@ export default Restaurant = props => {
 
     return (
         <ScrollGray showsVerticalScrollIndicator={false}>
+            <StatusBar hidden />
             <ContainerGray>
                 <BannerImage
                     as={Animated.Image}

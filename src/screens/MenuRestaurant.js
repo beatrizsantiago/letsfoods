@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 
 import { ContainerScroll, ContainerGray } from './styles/MainStyled'
@@ -12,6 +12,7 @@ import { Colors } from './styles/themes/Colors'
 export default MenuRestaurant = props => {
     return (
         <ContainerGray>
+            <StatusBar hidden />
             <ViewRed />
             <ContainerScroll showsVerticalScrollIndicator={false}>
                 <ViewIcons>

@@ -42,9 +42,9 @@ export const Row = styled.TouchableOpacity`
     padding: 8px 12px;
     margin: 0px 3%;
     border-top-width: 1px;
-    border-top-color: ${Colors.grayUltralight};
+    border-top-color: ${Colors.grayLight};
     border-bottom-width: 1px;
-    border-bottom-color: ${Colors.grayUltralight};
+    border-bottom-color: ${Colors.grayLight};
 `
 
 export const TitleItem = styled.Text`

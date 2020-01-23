@@ -1,14 +1,15 @@
 import React from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, StatusBar } from 'react-native'
 import IconFont from 'react-native-vector-icons/FontAwesome'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
 
+import { ScrollGray } from './styles/MainStyled'
 import { BoxProfile, CircleImage, ImageProfile, UserName, Row, TitleItem } from './styles/ProfileStyled'
 import { Colors } from './styles/themes/Colors'
 
 export default Profile = props => {
     return (
-        <ScrollView showsVerticalScrollIndicator={false} style={{ width: '100%', flex: 1 }}>
+        <ScrollGray showsVerticalScrollIndicator={false}>
             <BoxProfile>
                 <CircleImage>
                     <ImageProfile resizeMode="cover" source={{ uri: 'https://static.quizur.com/i/b/572bd56c4fb3f6.68420337486354-507674509250566-1665035794-n.png' }} />
@@ -34,7 +35,7 @@ export default Profile = props => {
                 <TitleItem>Ajuda</TitleItem>
                 <IconMComm name="chevron-down" size={26} color={Colors.grayDark} style={{ position: 'absolute', right: '3%' }} />
             </Row>
-        </ScrollView>
+        </ScrollGray>
     )
 }
 

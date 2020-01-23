@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
-import { Animated, Easing } from 'react-native'
+import { Animated, Easing, StatusBar } from 'react-native'
 
 import logo from '../assets/img/logo_black.png'
 
 import { ContainerCenter } from './styles/MainStyled'
 import { Welcome } from './styles/SplashStyled'
+import { Colors } from './styles/themes/Colors'
 
 export default function Splash(props) {
 
@@ -45,6 +46,7 @@ export default function Splash(props) {
 
     return (
         <ContainerCenter>
+            <StatusBar hidden />
             <Animated.Image source={logo} style={{ width: 283, height: 120, transform: [{ scale: springValue }] }} />
             <Animated.View style={{ top: textAnimation.interpolate({ inputRange: [0, 1], outputRange: [500, 120] }) }}>
                 <Welcome>Bem Vindo(a)!</Welcome>

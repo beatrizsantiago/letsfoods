@@ -1,14 +1,16 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
+import { View, Text, TouchableOpacity, Image, StatusBar } from 'react-native'
 
 import logo from '../assets/img/logo_black.png'
 
 import { ContainerCenter, ContainerRed } from './styles/MainStyled'
 import { LogoContainerGray, LabelAlign, LabelInput, InputRadius, ButtonRadius, TextButton, TextSubtitleGray, RegisterContainer, TextTitle } from './styles/AuthStyled'
+import { Colors } from './styles/themes/Colors'
 
 export default Register = props => {
     return (
         <ContainerRed>
+            <StatusBar hidden />
             <LogoContainerGray>
                 <Image source={logo} style={{ width: 141, height: 60 }} />
             </LogoContainerGray>

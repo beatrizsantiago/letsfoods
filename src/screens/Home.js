@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native'
 import IconMComm from 'react-native-vector-icons/MaterialCommunityIcons'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 
@@ -23,6 +23,7 @@ import lunch from '../assets/icons/lunch.png'
 export default Home = props => {
     return (
         <ContainerGray>
+            <StatusBar backgroundColor={Colors.grayUltralight} barStyle="dark-content" />
             <ScrollGray showsVerticalScrollIndicator={false}>
                 <Header>
                     <TextHeader><Text style={{ color: Colors.redFood }}>Let's</Text> Foods</TextHeader>

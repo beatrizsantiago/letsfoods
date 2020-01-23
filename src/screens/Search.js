@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, StatusBar } from 'react-native'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 
 import { ContainerGray, ScrollGray } from './styles/MainStyled'

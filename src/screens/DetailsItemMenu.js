@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native'
 import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconEntypo from 'react-native-vector-icons/Entypo'
 
@@ -14,6 +14,7 @@ import { Colors } from './styles/themes/Colors'
 export default DetailsItemMenu = props => {
     return (
         <ContainerGray>
+            <StatusBar hidden />
             <ScrollGray showsVerticalScrollIndicator={false}>
 
                 <Header>
